@@ -57,7 +57,7 @@ What Outputs Do They Need?
         (b) All the profiles currently listed in the system
         (c) The Chat Feature from the Admin Side
 
-##What Inputs are Needed to Generate Those Outputs?
+What Inputs are Needed to Generate Those Outputs?
 
     For End User:
       1. The user will need to be able to create a profile that will be used to create an account on the site.
