@@ -82,7 +82,7 @@ A project description:
 Puzzle Adventure Game 
 
 Who uses it?
-Any end cuser that enjoys playing puzzle adventure games
+Any end user that enjoys playing puzzle adventure games
 
 What outputs do they need?
 As the End User:
