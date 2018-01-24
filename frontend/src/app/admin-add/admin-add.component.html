@@ -1,0 +1,17 @@
+<p>
+  admin-add works!
+</p>
+
+<form (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label class="col-xs-4 control-label" for="">Admin name: </label>
+            <div class="col-xs-8">
+                <input type="text" style="width: 300px" class="form-control" required
+                    [(ngModel)]="admin.name" name="adminName">
+            </div>
+            <div>
+            <input type="submit" value="Create" />
+            </div>
+        </div>
+    </form>
