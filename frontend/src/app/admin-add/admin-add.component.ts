@@ -13,7 +13,7 @@ export class AdminAddComponent implements OnInit {
   public admin : Admin  = new Admin();
 
   constructor(public apiService: ApiService , public acRoute : ActivatedRoute) {
-
+};
     ngOnInit() {
 
       this.acRoute.params.subscribe((data : any)=>{

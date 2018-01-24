@@ -1,9 +1,16 @@
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import {ApiService} from "./api.service";
+import { AppComponent } from './app.component';
+
 import { AdminAddComponent } from './admin-add/admin-add.component';
 import { AdminListComponent } from './admin-list/admin-list.component';
 import { UserAddComponent } from './user-add/user-add.component';
 import { UserListComponent } from './user-list/user-list.component';
-import { FormsModule } from '@angular/forms';
+
 /*Other imports*/
 
 @NgModule({
@@ -48,4 +55,4 @@ import { FormsModule } from '@angular/forms';
   providers: [ApiService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { };

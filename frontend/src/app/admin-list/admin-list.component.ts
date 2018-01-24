@@ -12,15 +12,15 @@ export class AdminListComponent implements OnInit {
   public columns = ['id','name'];
   public rows : Array<Admin>;
 
-  constructor(public apiService: ApiService , public router : Router) {
-
+  constructor(public apiService: ApiService , public router : Router){
+};
   ngOnInit(){
     this.apiService.get("admins").subscribe((data : Admin[])=>{
     console.log(data);
     this.rows = data;
   });
   }
-  }
+
   public delete(id:string){
 
     console.log("delete : " + id);
@@ -35,7 +35,7 @@ export class AdminListComponent implements OnInit {
     },this.rows)
 
     });
-  
+
   }
   public update(id:string){
     console.log("update : " + id );
