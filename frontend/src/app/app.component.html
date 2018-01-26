@@ -1,23 +1,56 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="container">
 
-    <h1></h1>
-    <h2></h2>
+<nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="nav navbar-nav navbar-brand"><i class="fa fa-spinner fa-spin fa-1x" style="color: #00FFFF;"><!-- icon --></i>Sirenet</a>
+    </div>
+    <div class="collapse navbar-collapse" id="custom-collapse">
+      <ul class="nav navbar-nav navbar-right" routerLink="active">
+        <li><a class="navbar-brand" routerLink="">Admin Dashboard</a></li>
+        <li><a class="navbar-brand" routerLink="">User Dashboard</a></li>
+        <!-- <li><a class="navbar-brand" routerLink="">Admin Login</a></li>
+        <li><a class="navbar-brand" routerLink="">User Login</a></li> -->
+        <!-- <li><a class="navbar-brand" routerLink="/admins">Admins</a></li>
+        <li><a class="navbar-brand" routerLink="/users">Users</a></li>
+        <li><a class="navbar-brand" routerLink="/admins/add">Add Admins</a></li>
+        <li><a class="navbar-brand" routerLink="/users/add">Add Users</a></li> -->
+      </ul>
+    </div>
   </div>
-  <div class="panel panel-primary">
-    <div class="panel-heading" style="background: greenyellow;">
+</nav>
 
-        <a routerLink="/admins">Admins</a>
-        <a routerLink="/users">Users</a>
-        <a routerLink="/admins/add">Add Admins</a>
-        <a routerLink="/users/add">Add Users</a>
+<router-outlet></router-outlet>
 
+<section class="home-section home-full-height bg-dark-30" data-background="assets/images/background1.jpg">
+  <div class="responsive-module video-player"     data-property="{videoURL:'https://www.youtube.com/watch?v=00CtuaynOLQ', containment:'.home-section', startAt:1, mute:true, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:15}">
+  </div>
+    <div class="video-controls-box">
+      <div class="container">
+        <div class="video-controls">
+          <a class="fa fa-pause" id="video-play" href="#">&nbsp;</a>
+        </div>
+      </div>
     </div>
-    <div class="panel-body">
-
-        <router-outlet></router-outlet>
-
-
+    <div class="titan-caption">
+      <div class="caption-content">
+          <div class="font-alt mb-42 titan-title-size-4"><span class="rotate">Enterprise Business Architecture | Innovative Technology Concepts | Artifical Intelligence Framework | Welcome to Sirenet</span>
+          </div>
+          <div class="learn-more"></div>
+          <div class="font-alt mb-38 titan-title-size-1"></div>
+          <div class="spacing"><a class="section-scroll btn btn-border-w btn-circle" href="#about"><i class="fa fa-angle-down fa-2x"></i></a></div>
+      </div>
     </div>
+</section>
 
-</div>
+<section class="module" data-background="assets/images/background2.png">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 align-center">
+        <h2 id="about" class="font-alt titan-title-size-3">Who are We?</h2>
+        <div class="font-alt titan-title-size-2">We’re a miami based Information Technology Center combining leading industry standards with forward-looking principles to increase your footprint in today's global networking enviornment</div>
+        <div  class="double-spacing"></div>
+      </div>
+    </div>
+  </div>
+</section>
