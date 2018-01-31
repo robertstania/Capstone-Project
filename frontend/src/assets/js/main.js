@@ -1,5 +1,3 @@
-console.log('%c Proudly Crafted by Tania Roberts', 'background: #222; color: #bada55');
-
 /* ---------------------------------------------- /*
  * Preloader
  /* ---------------------------------------------- */

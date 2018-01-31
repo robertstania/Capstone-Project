@@ -1,13 +1,49 @@
-<form (ngSubmit)="onSubmit()">
+<nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+  <div class="navbar-header col-md-8">
+      <a class="nav navbar-nav navbar-brand"><i class="fa fa-spinner fa-spin fa-1x" style="color: #00FFFF;"></i>Sirenet Admin Dashboard | Add New Admin Profile</a>
+  </div>
+</nav>
 
-        <div class="form-group">
-            <label class="col-xs-4 control-label" for="">Admin name: </label>
-            <div class="col-xs-8">
-                <input type="text" style="width: 300px" class="form-control" required
-                    [(ngModel)]="admin.name" name="adminName">
+  <section class="home-section home-full-height" data-background="assets/images/background2.png">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-3">
+          <h4 class="font-alt titan-title-size-3">Add New Admin</h4>
+          <form class="form">
+            <div class="form-group">
+              <input class="form-control" type="text" name="first name" placeholder="First Name"/>
             </div>
-            <div>
-            <input type="submit" value="Create" />
+            <div class="form-group">
+              <input class="form-control" type="text" name="last name" placeholder="Last Name"/>
             </div>
+            <div class="form-group">
+              <input class="form-control" type="text" name="access level" placeholder="Access Level"/>
+            </div>
+            <div class="form-group">
+              <input class="form-control"  type="password" name="password" placeholder="Create New Password"/>
+            </div>
+            <div class="button-space"></div>
+            <div class="form-group">
+              <button id="login-button" class="btn btn-round btn-b"><a href="/admins/update">Submit</a></button>
+            </div>
+          </form>
         </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <div class="container">
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label class="col-xs-4 control-label" for="">Admin name: </label>
+          <div class="col-xs-8">
+          <input type="text" style="width: 300px" class="form-control" required
+                        [(ngModel)]="admin.name" name="adminName">
+          </div>
+          <div>
+          <input type="submit" value="Create" />
+          </div>
+          </div>
     </form>
+  </div> -->

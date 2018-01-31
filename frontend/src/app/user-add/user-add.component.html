@@ -1,3 +1,54 @@
-<p>
-  user-add works!
-</p>
+<nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+  <div class="navbar-header col-md-8">
+      <a class="nav navbar-nav navbar-brand"><i class="fa fa-spinner fa-spin fa-1x" style="color: #00FFFF;"></i>Sirenet Admin Dashboard | Add New User Profile</a>
+  </div>
+</nav>
+
+  <section class="home-section home-full-height" data-background="assets/images/background2.png">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-3">
+          <h4 class="font-alt titan-title-size-4">Add New User</h4>
+          <form class="form">
+            <div class="form-group">
+              <input class="form-control" type="text" name="first name" placeholder="First Name"/>
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" name="last name" placeholder="Last Name"/>
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" name="job title" placeholder="Job Title"/>
+            </div>
+            <div class="form-group">
+              <input class="form-control"  type="password" name="password" placeholder="Create New Password"/>
+            </div>
+            <div class="button-space"></div>
+            <div class="form-group">
+              <button id="login-button" class="btn btn-round btn-b"><a href="/admins/update">Submit</a></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+<!-- <form (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label class="col-xs-4 control-label" for="">User name: </label>
+            <div class="col-xs-8">
+                <input type="text" style="width: 300px" class="form-control" required
+                    [(ngModel)]="user.name" name="userName">
+            </div>
+            <div>
+            <input type="submit" value="Create" />
+            </div>
+        </div>
+
+</form> -->

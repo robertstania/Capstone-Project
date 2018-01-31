@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 import { Router } from '@angular/router';
 import { ApiService } from '../api.service';
 import { Admin } from '../admin';

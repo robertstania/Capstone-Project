@@ -6,14 +6,21 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Admin.create!([
-  { name: 'Admin 001' },
-  { name: 'Admin 002' },
-  { name: 'Admin 003' },
-  { name: 'Admin 004' }
+  { name: 'Tania Roberts' },
+  { name: 'Edward Roberts' },
+  { name: 'Nina James' },
+  { name: 'Sally Johnson' }
 ])
 User.create!([
   { name: 'User 001' },
   { name: 'User 002' },
   { name: 'User 003' },
   { name: 'User 004' }
+])
+Ticket.create!([
+  { reference: 'TIC001' },
+  { reference: 'TIC002' },
+  { reference: 'TIC003' },
+  { reference: 'TIC004' },
+  { reference: 'TIC005' }
 ])

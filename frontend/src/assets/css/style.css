@@ -15,7 +15,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  max-width: 100%;n
   height: auto;
 }
 
@@ -27,8 +27,8 @@ iframe {
   padding-top: 0%;
 }
 
-.learn-more{
-  padding-top: 24%;
+.angle-down-space{
+  padding-top: 25%;
 }
 
 .spacing{
@@ -59,7 +59,7 @@ iframe {
   left: auto !important;
 }
 
-/* Transition elsements */
+/* Transition elements */
 a,
 .btn {
   transition: all 0.125s ease-in-out 0s;
@@ -670,8 +670,8 @@ a,
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 11px;
-  padding: 8px 37px;
+  font-size: 18px;
+
 }
 
 .btn.active.focus,
@@ -684,8 +684,10 @@ a,
 }
 
 .btn.btn-round {
-  border-radius: 2px;
+  border-radius: 15px;
+  padding: 5px 15px 5px 15px;
 }
+
 
 .btn.btn-circle {
   border-radius: 30px;
@@ -749,23 +751,23 @@ a,
 .btn-border-d {
   background: transparent;
   border: 1px solid #111111;
-  color: #111;
+  color: #FFFFFF;
 }
 
 .btn.btn-border-d:hover,
 .btn.btn-border-d:focus {
   background: #111111;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .btn.btn-font-w {
   background: rgba(255, 255, 255, 0.8);
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .btn.btn-font-w:hover {
   background: #fff;
-  color: #111;
+  color: #FFFFFF;
 }
 
 /* Buttons size */
@@ -832,10 +834,14 @@ a,
 /* Forms common style */
 .form-control {
   font-family: "Roboto Condensed", sans-serif;
+  /* float: center; */
+  max-width: 70%;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 11px;
-  height: 33px;
+  font-size: 20px;
+  color: black;
+  font-weight: 900px:
+  /* height: 33px; */
   border: 1px solid #EAEAEA;
   border-radius: 2px;
   transition: all 0.4s ease-in-out 0s;
@@ -846,16 +852,17 @@ a,
 }
 
 /* Forms size */
-.input-lg,
+ .input-lg,
 .form-horizontal .form-group-lg .form-control {
   height: 43px;
   font-size: 13px;
+  color: black;
 }
 
-.input-sm, .form-horizontal .form-group-sm .form-control {
+/* .input-sm, .form-horizontal .form-group-sm .form-control {
   height: 29px;
   font-size: 10px;
-}
+} */
 
 .rqst-form {
   margin-top: 27px;
@@ -873,7 +880,7 @@ a,
 	Typography
 --------------------------------------------------------------*/
 a {
-  color: #111;
+  color: #FFFFFF;
 }
 
 a:hover, a:focus {
@@ -910,7 +917,7 @@ blockquote {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: white;
+  color: #FFFFFF;
 }
 
 .font-serif {
@@ -932,14 +939,14 @@ blockquote {
   text-align: center;
   font-weight: 400;
   font-size: 30px;
-  color: white;
+  color: #FFFFFF;
   margin: 0 0 70px;
 }
 
 .module-subtitle {
   text-align: center;
   font-size: 16px;
-  color: white;
+  color: #FFFFFF;
   margin-bottom: 70px;
 }
 
@@ -947,7 +954,7 @@ blockquote {
   text-align: center;
   font-size: 32px;
   margin-bottom: 20px;
-  color: white;
+  color: #FFFFFF;
 }
 
 .module-title + .module-subtitle {
@@ -1274,7 +1281,7 @@ General Styles - Owlcarousel
 
 .navbar a {
   transition: color 0.125s ease-in-out 0s;
-  color: white;
+  color: #FFFFFF;
 }
 
 .navbar-custom .dropdown-menu {
@@ -1283,12 +1290,13 @@ General Styles - Owlcarousel
   border: 0;
   padding: 0;
   box-shadow: none;
+  font-style: 18px:
 }
 
 .navbar-custom .navbar-brand {
   letter-spacing: 6px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   color: white;
 }
 
@@ -1302,6 +1310,7 @@ General Styles - Owlcarousel
   padding: 11px 15px;
   letter-spacing: 2px;
   color: #999;
+  font-size: 16px;
 }
 
 .navbar-custom .dropdown-menu .dropdown-menu {
@@ -1415,13 +1424,14 @@ General Styles - Owlcarousel
 
 .titan-title-size-3 {
   letter-spacing: 16px;
+  font-weight: 400;
   font-size: 46px;
 }
 
 .titan-title-size-4 {
-  letter-spacing: 24px;
+  letter-spacing: 20px;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 46px;
 }
 
 /* Agency Page Header */
@@ -1570,14 +1580,14 @@ Google map
   margin: 20px 0;
   text-align: center;
   font-weight: 700;
-  color: white;
+  color: #FFFFFF;
 }
 
 .features-icon,
 .alt-features-icon {
   line-height: 1.2;
   font-size: 42px;
-  color: white;
+  color: #FFFFFF;
 }
 
 .features-title,
@@ -1586,7 +1596,7 @@ Google map
   letter-spacing: 2px;
   font-weight: 400;
   font-size: 16px;
-  color: white;
+  color: #FFFFFF;
   margin: 16px 0 15px;
 }
 
