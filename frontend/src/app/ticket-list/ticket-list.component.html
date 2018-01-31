@@ -31,45 +31,10 @@
                         <th>DELETE</th>
                       </thead>
                       <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>Dakota Rice</td>
-                            <td>Can't Connect to Internet</td>
-                            <td><button class="btn btn-round btn-b"><a href="/ticket/update">Update</a></button></td>
-                            <td><button class="btn btn-round btn-b"><a href="/ticket/delete">Delete</a></button></td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>Minerva Hooper</td>
-                            <td>Can't Print Document</td>
-                            <td><button class="btn btn-round btn-b"><a href="/ticket/update">Update</a></button></td>
-                            <td><button class="btn btn-round btn-b"><a href="/ticket/delete">Delete</a></button></td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>Sage Rodriguez</td>
-                            <td>Login Issue</td>
-                            <td><button class="btn btn-round btn-b"><a href="/ticket/update">Update</a></button></td>
-                            <td><button class="btn btn-round btn-b"><a href="/ticket/delete">Delete</a></button></td>
-                          </tr>
-                          <tr>
-                            <td>4</td>
-                            <td>Philip Chaney</td>
-                            <td>Password Reset</td>
-                            <td><button class="btn btn-round btn-b"><a href="/ticket/update">Update</a></button></td>
-                            <td><button class="btn btn-round btn-b"><a href="/ticket/delete">Delete</a></button></td>
-                          </tr>
-                          <tr>
-                            <td>5</td>
-                            <td>Doris Greene</td>
-                            <td>Computer Won't Turn On</td>
-                            <td><button class="btn btn-round btn-b"><a href="/ticket/update">Update</a></button></td>
-                            <td><button class="btn btn-round btn-b"><a href="/ticket/delete">Delete</a></button></td>
-                          </tr>
-                          <tr>
-                            <td>6</td>
-                            <td>Mason Porter</td>
-                            <td>Create New Profile</td>
+                          <tr *ngFor="let row of rows">
+                            <td>{{row.reference}}</td>
+                            <td>{{row.name}}</td>
+                            <td>{{row.issue}}</td>
                             <td><button class="btn btn-round btn-b"><a href="/ticket/update">Update</a></button></td>
                             <td><button class="btn btn-round btn-b"><a href="/ticket/delete">Delete</a></button></td>
                           </tr>
@@ -82,31 +47,3 @@
             </div>
           </div>
 </section>
-
-
-<!-- <div class="panel panel-default" style="margin-top:10px;">
-<div class="panel-heading">
-    Ticket Queue
-</div>
-<div class="panel-body" style="position:relative">
-    <div class="table-responsive">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Actions</th>
-                    <th *ngFor="let column of columns">
-                          <h1>ticket.name</h1>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let row of rows">
-                    <button (click)="delete(row['id'])">delete</button> ||
-                    <button (click)="update(row['id'])">update</button>
-                    <td *ngFor="let column of columns">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div> -->

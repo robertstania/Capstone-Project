@@ -6,21 +6,24 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Admin.create!([
-  { name: 'Tania Roberts' },
-  { name: 'Edward Roberts' },
-  { name: 'Nina James' },
-  { name: 'Sally Johnson' }
+  { name: 'Tania Roberts', role: 'System Admin', password: 'abc'},
+  { name: 'Edward Roberts', role: 'System Admin', password: 'abc'},
+  { name: 'Sally Johnson', role: 'Support Admin', password: 'abc'},
+  { name: 'Nina Reeves', role: 'Support Admin', password: 'abc' }
 ])
 User.create!([
-  { name: 'User 001' },
-  { name: 'User 002' },
-  { name: 'User 003' },
-  { name: 'User 004' }
+  { name: 'Dakota Rice', country: 'France', city: 'Paris' , password: 'abc'},
+  { name: 'Minerva Hooper', country: 'Curaçao', city: 'Sinaai-Waas', password:'abc'},
+  { name: 'Sage Rodriguez', country: 'Netherlands', city: 'Baileux', password: 'abc'},
+  { name: 'Philip Chaney', country: 'Korea, South', city: 'Overland Park', password: 'abc'},
+  { name: 'Doris Greene', country: 'Malawi', city: 'Feldkirchen in Kärnten', password: 'abc'},
+  { name: 'Mason Porter', country: 'Chile', city: 'Gloucester', password: 'abc'}
 ])
 Ticket.create!([
-  { reference: 'TIC001' },
-  { reference: 'TIC002' },
-  { reference: 'TIC003' },
-  { reference: 'TIC004' },
-  { reference: 'TIC005' }
+  { reference: 'Ticket 01', name: 'Dakota Rice', issue: 'Cannot Connect to Internet'},
+  { reference: 'Ticket 02', name: 'Minerva Hooper', issue: 'Documents Will Not Print'},
+  { reference: 'Ticket 03', name: 'Sage Rodriguez', issue: 'Login Issue'},
+  { reference: 'Ticket 04', name: 'Philip Chaney', issue: 'Password Reset'},
+  { reference: 'Ticket 05', name: 'Doris Greene', issue: 'Computer Will Not Turn On'},
+  { reference: 'Ticket 06', name: 'Mason Porter', issue: 'Need New User Profile'}
 ])
