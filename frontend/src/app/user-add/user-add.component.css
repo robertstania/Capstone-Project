@@ -2,6 +2,6 @@
   padding-top: 18%;
 }
 
-input {
-  color: black;
+::-webkit-input-placeholder {
+    color: black;
 }

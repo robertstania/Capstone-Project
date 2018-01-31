@@ -1,6 +1,6 @@
 <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
   <div class="navbar-header">
-      <a class="nav navbar-nav navbar-brand"><i class="fa fa-spinner fa-spin fa-1x" style="color: #00FFFF;"></i>Sirenet Admin Dashboard | Current Admin Profiles</a>
+      <a class="nav navbar-nav navbar-brand" href="/admin_dashboard"><i class="fa fa-spinner fa-spin fa-1x" style="color: #00FFFF;"></i>Sirenet Admin Dashboard | Current Admin Profiles</a>
   </div>
   <div class="collapse navbar-collapse" id="custom-collapse">
     <ul class="nav navbar-nav navbar-right" routerLink="active">
@@ -26,31 +26,45 @@
                       <thead>
                         <th>Admin ID</th>
                         <th>Admin Name</th>
+                        <th>Update</th>
+                        <th>Delete</th>
                       </thead>
                       <tbody>
                           <tr>
                             <td>1</td>
                             <td>Dakota Rice</td>
+                            <td><button class="btn btn-round btn-b"><a href="/admin/update">Update</a></button></td>
+                            <td><button class="btn btn-round btn-b"><a href="/admin/delete">Delete</a></button></td>
                           </tr>
                           <tr>
                             <td>2</td>
                             <td>Minerva Hooper</td>
+                            <td><button class="btn btn-round btn-b"><a href="/admin/update">Update</a></button></td>
+                            <td><button class="btn btn-round btn-b"><a href="/admin/delete">Delete</a></button></td>
                           </tr>
                           <tr>
                             <td>3</td>
                             <td>Sage Rodriguez</td>
+                            <td><button class="btn btn-round btn-b"><a href="/admin/update">Update</a></button></td>
+                            <td><button class="btn btn-round btn-b"><a href="/admin/delete">Delete</a></button></td>
                           </tr>
                           <tr>
                             <td>4</td>
                             <td>Philip Chaney</td>
+                            <td><button class="btn btn-round btn-b"><a href="ticket/update">Update</a></button></td>
+                            <td><button class="btn btn-round btn-b"><a href="ticket/delete">Delete</a></button></td>
                           </tr>
                           <tr>
                             <td>5</td>
                             <td>Doris Greene</td>
+                            <td><button class="btn btn-round btn-b"><a href="ticket/update">Update</a></button></td>
+                            <td><button class="btn btn-round btn-b"><a href="ticket/delete">Delete</a></button></td>
                           </tr>
                           <tr>
                             <td>6</td>
                             <td>Mason Porter</td>
+                            <td><button class="btn btn-round btn-b"><a href="ticket/update">Update</a></button></td>
+                            <td><button class="btn btn-round btn-b"><a href="ticket/delete">Delete</a></button></td>
                           </tr>
                         </tbody>
                       </table>
@@ -62,7 +76,7 @@
           </div>
 </section>
 
-<div class="panel panel-default" style="margin-top:10px;">
+<!-- <div class="panel panel-default" style="margin-top:10px;">
 <div class="panel-heading">
     Admins
 </div>
@@ -87,4 +101,4 @@
             </tbody>
         </table>
     </div>
-</div>
+</div> -->
