@@ -26,7 +26,7 @@
                       <thead>
                         <th>Admin ID</th>
                         <th>Admin Name</th>
-                        <th>Admin Role</th>
+                        <!-- <th>Admin Role</th> -->
                         <th>Update</th>
                         <th>Delete</th>
                       </thead>
@@ -34,9 +34,9 @@
                           <tr *ngFor="let row of rows">
                             <td>{{row.id}}</td>
                             <td>{{row.name}}</td>
-                            <td>{{row.role}}</td>
-                            <td><button class="btn btn-round btn-b"><a href="/admin/update">Update</a></button></td>
-                            <td><button class="btn btn-round btn-b"><a href="/admin/delete">Delete</a></button></td>
+                            <!-- <td>{{row.role}}</td> -->
+                            <td><button class="btn btn-round btn-b" (click)="update(row['id'])">update</button></td>
+                            <td><button class="btn btn-round btn-b" (click)="delete(row['id'])">delete</button></td>
                           </tr>
                         </tbody>
                       </table>

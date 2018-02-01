@@ -26,8 +26,8 @@
                       <thead>
                         <th>USER ID</th>
                         <th>USER NAME</th>
-                        <th>COUNTRY</th>
-                        <th>CITY</th>
+                        <!-- <th>COUNTRY</th>
+                        <th>CITY</th> -->
                         <th>UPDATE</th>
                         <th>DELETE</th>
                       </thead>
@@ -35,10 +35,10 @@
                           <tr *ngFor="let row of rows">
                             <td>{{row.id}}</td>
                             <td>{{row.name}}</td>
-                            <td>{{row.country}}</td>
-                            <td>{{row.city}}</td>
-                            <td><button class="btn btn-round btn-b"><a href="/user/update">Update</a></button></td>
-                            <td><button class="btn btn-round btn-b"><a href="/user/delete">Delete</a></button></td>
+                            <!-- <td>{{row.country}}</td>
+                            <td>{{row.city}}</td> -->
+                            <td><button class="btn btn-round btn-b" (click)="update(row['id'])">update</button></td>
+                            <td><button class="btn btn-round btn-b" (click)="delete(row['id'])">delete</button></td>
                           </tr>
                         </tbody>
                       </table>
@@ -49,31 +49,3 @@
             </div>
           </div>
 </section>
-
-
-
-<!-- <div class="panel panel-default" style="margin-top:10px;">
-<div class="panel-heading">
-    Users
-</div>
-<div class="panel-body" style="position:relative">
-    <div class="table-responsive">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Actions</th>
-                    <th *ngFor="let column of columns">
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let row of rows">
-                    <button (click)="update(row['id'])">update</button>
-                    <button (click)="delete(row['id'])">delete</button> ||
-                    <td *ngFor="let column of columns">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div> -->

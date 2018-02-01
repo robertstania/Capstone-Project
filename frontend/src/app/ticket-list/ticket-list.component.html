@@ -35,8 +35,8 @@
                             <td>{{row.reference}}</td>
                             <td>{{row.name}}</td>
                             <td>{{row.issue}}</td>
-                            <td><button class="btn btn-round btn-b"><a href="/ticket/update">Update</a></button></td>
-                            <td><button class="btn btn-round btn-b"><a href="/ticket/delete">Delete</a></button></td>
+                            <td><button class="btn btn-round btn-b" (click)="update(row['id'])">update</button></td>
+                            <td><button class="btn btn-round btn-b" (click)="delete(row['id'])">delete</button></td>
                           </tr>
                         </tbody>
                       </table>
