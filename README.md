@@ -2,7 +2,7 @@
 
 Project Description:
 
-    Tech Support App for a Small Business Environment
+    Tech Support App for a Small Business Environment.
 
 Potential Clients:
 
