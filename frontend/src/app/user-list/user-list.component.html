@@ -26,8 +26,8 @@
                       <thead>
                         <th>USER ID</th>
                         <th>USER NAME</th>
-                        <!-- <th>COUNTRY</th>
-                        <th>CITY</th> -->
+                        <th>COUNTRY</th>
+                        <th>CITY</th>
                         <th>UPDATE</th>
                         <th>DELETE</th>
                       </thead>
@@ -35,8 +35,8 @@
                           <tr *ngFor="let row of rows">
                             <td>{{row.id}}</td>
                             <td>{{row.name}}</td>
-                            <!-- <td>{{row.country}}</td>
-                            <td>{{row.city}}</td> -->
+                            <td>{{row.country}}</td>
+                            <td>{{row.city}}</td>
                             <td><button class="btn btn-round btn-b" (click)="update(row['id'])">update</button></td>
                             <td><button class="btn btn-round btn-b" (click)="delete(row['id'])">delete</button></td>
                           </tr>
